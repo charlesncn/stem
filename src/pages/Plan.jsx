@@ -2,7 +2,9 @@ import React from 'react'
 
 function Plan() {
   return (
-    <div className='plan'>Plan</div>
+    <div className='plan'>
+      
+    </div>
   )
 }
 
