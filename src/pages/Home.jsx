@@ -24,7 +24,7 @@ function Home() {
         <h3>Our Sponsors</h3>
         <div className="card">
           <span>Blueband</span>
-          {/* <img src='' className='brandName'> */}
+          <img src='' className='brandName'/>
         </div>
       </div>
     </div>
