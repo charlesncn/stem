@@ -45,7 +45,7 @@ const Plan = () => {
             <img src={plans.img} alt="" />
             <p>{plans.description}</p>
             <span>{plans.price}</span><br/>
-            <Link to="" className="button">Book Now</Link>
+            <Link to="/confirm"  className="button">Book Now</Link>
           </div>
           ))}
         </div>
@@ -59,7 +59,7 @@ const Plan = () => {
             <img src={plans.img} alt="" />
             <p>{plans.description}</p>
             <span>{plans.price}</span><br/>
-            <Link to="" className="button">Book Now</Link>
+            <Link to="/confirm" className="button">Book Now</Link>
           </div>
           ))}
         </div>

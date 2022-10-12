@@ -1,4 +1,5 @@
 $bg-color: #d4f2f4;
+$bg-color-variant: #d4f2f4e6;
 $primary-color: #04445f;
 $primary-color-variant: #04445feb;
 $secondary-color: #189ab4;
@@ -240,7 +241,10 @@ $orange: #cca152;
 
     .plan {
       border-top: 1px solid $primary-color;
-      background-image: url("");
+      background-image: url("https://github.com/charlesncn/stem/blob/main/src/imgs/payment%20bg.png?raw=true");
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
       h3 {
         font-size: 2.5rem;
         font-weight: 600;
@@ -273,6 +277,7 @@ $orange: #cca152;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            background-color: $bg-color-variant;
             width: 350px;
             box-shadow: 0 0 10px 0 $outline-color;
             border-radius: 5px;
@@ -283,19 +288,19 @@ $orange: #cca152;
               width: 80px;
               object-fit: contain;
             }
-            p{
+            p {
               font-size: 1.2rem;
               font-weight: 300;
               color: $primary-color;
               text-align: center;
             }
-            span{
+            span {
               font-size: 1.2rem;
               font-weight: 800;
               color: $primary-color;
               text-align: center;
             }
-            .button{
+            .button {
               padding: 10px 30px;
               border: 1px solid $outline-color;
               border-radius: 10px;
@@ -309,6 +314,53 @@ $orange: #cca152;
                 background-color: $primary-color;
                 color: $white;
               }
+            }
+          }
+        }
+      }
+    }
+
+    //--------------- PLAN END ---------------
+
+    //--------------- Booked ---------------
+    .booked {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+
+      .card {
+        width: 500px;
+        border-radius: 10px;
+        box-shadow: 0 0 5px 0 $outline-color;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .links {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .button {
+            width: 100px;
+            padding: 10px 30px;
+            margin: 20px 5px;
+            border-radius: 10px;
+            background-color: $bg-color;
+            border: 1px solid $outline-color;
+            color: $primary-color;
+            text-align: center;
+            text-decoration: none;
+
+            &:hover:nth-child(1) {
+              background-color: $primary-color-variant;
+              border: 1px solid $primary-color-variant;
+              color: $white;
+            }
+            &:hover:nth-child(2) {
+              background-color: $orange;
+              border: 1px solid $orange;
+              color: $white;
             }
           }
         }
@@ -448,5 +500,58 @@ $orange: #cca152;
       }
     }
     // --------------- FOOTER END ---------------
+  }
+}
+
+@media (max-width: 768px) {
+  .app {
+    max-width: 100vw;
+
+    .conatiner {
+      width: 95vw;
+      margin: 0 auto;
+      .auth {
+        min-height: 100vh;
+        .form-container {
+          max-width: 85vw;
+
+          form {
+            width: 90vw;
+            gap: 20px;
+          }
+        }
+      }
+
+      .home {
+        .sponsors {
+          width: 100%;
+          margin: 80px 0;
+          .cardContainer {
+            margin: 80px 0 0 0;
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+
+            gap: 20px;
+            .card {
+              height: max-content;
+              width: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              gap: 20px;
+              border-bottom: 1px solid $outline-color;
+
+              img {
+                width: 64px;
+                object-fit: cover;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }

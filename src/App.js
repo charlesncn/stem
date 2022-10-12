@@ -12,6 +12,7 @@ import Plan from './pages/Plan';
 import Register from "./pages/Register.jsx";
 import Login from "./pages/Login.jsx";
 import './styles.scss'
+import Booked from "./pages/Booked";
 
 const Layout = () => {
   return (
@@ -44,6 +45,10 @@ const router = createBrowserRouter([
   {
     path: "/login",
     element: <Login />,
+  },
+  {
+    path: "/confirm",
+    element: <Booked />,
   }
 ]);
 
