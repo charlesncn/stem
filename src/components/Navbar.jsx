@@ -10,12 +10,11 @@ const Navbar = () => {
           <img src={Logo} alt="" />
         </div>
         <div className="links">
-          <div className="menu">
             <Link to="/">Home</Link>
-            <Link to="/new">Plan</Link>
+            <Link to="/plan">Plan</Link>
             <Link to="/login">Login</Link>
             {/* <span>User</span> */}
-          </div>
+
         </div>
       </div>
     </div>
