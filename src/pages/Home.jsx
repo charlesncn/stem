@@ -80,7 +80,7 @@ function Home() {
 
       </div>
       <div className="sponsors">
-        <h3>Our Sponsors</h3>
+        <h3>Potential Sponsors</h3>
         <div className="cardContainer">
         <div className="card">
           <img
