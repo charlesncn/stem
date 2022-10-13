@@ -315,15 +315,15 @@ $orange: #cca152;
         }
       }
       .sponsors {
-        margin: 40px 0 0 0;
+        margin: 20px 0 0 0;
         h3 {
           text-align: center;
-          font-size: 2rem;
-          font-weight: 600;
+          font-size: 1.5rem;
+          font-weight: 500;
           color: $primary-color;
         }
         .cardContainer {
-          margin: 30px 0 0 0;
+          margin: 60px 0 0 0;
           display: flex;
           align-items: flex-start;
           justify-content: center;
@@ -388,8 +388,8 @@ $orange: #cca152;
           margin: 60px 0;
           border-radius: 10px;
           h4 {
-            font-size: 2rem;
-            font-weight: 600;
+            font-size: 1.8rem;
+            font-weight: 500;
             color: $primary-color;
             text-align: center;
           }
@@ -410,14 +410,14 @@ $orange: #cca152;
               object-fit: contain;
             }
             p {
-              font-size: 1.2rem;
+              font-size: 1rem;
               font-weight: 300;
               color: $primary-color;
               text-align: center;
             }
             span {
               font-size: 1.2rem;
-              font-weight: 800;
+              font-weight: 300;
               color: $primary-color;
               text-align: center;
             }
