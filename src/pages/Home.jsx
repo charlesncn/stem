@@ -20,17 +20,17 @@ function Home() {
 
           <div className="right">
             <h1>STEAM AT WESTGATE</h1>
-            <h5> (SCIENCE, TECHNOLOGY, ENGINEERING, ART, MATHS)</h5>
+            {/* <h5> (SCIENCE, TECHNOLOGY, ENGINEERING, ART, MATHS)</h5> */}
             <p>
-              Educate Your Kids This Holiday Season With Westgate Kids, Club
-              Steam For Kids. <br /> Topics Included: STEAM (Science,
-              Technology, Engineering, Art, Math), Food, Movie & So Much More.
-             
-              You Also Get To Enjoy The Goodies From Our Sponsors.
+              Educate your kids this holiday season with Westgate Kids & Club
+              steam for kids. <br /> <span className="topic">Topics Included</span><br/> STEAM (Science,
+              Technology, Engineering, Art, Math),<br/> food, movie & so much more.
+             <br/>
+              You also get to enjoy the goodies from our sponsors.
             </p>
             <span className="dates">
-              Starting 26<sup>th</sup> & 27<sup>th</sup> November
-              <br /> 2022  (onwards)
+              Starting 26<sup>th</sup> & 27<sup>th</sup> Nov 2022
+              <br />   (onwards)
             </span>
             <br />
             <Link to="/register" className="button">

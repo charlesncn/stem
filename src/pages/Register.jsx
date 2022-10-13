@@ -11,8 +11,6 @@ function Register() {
         <input required type='text' placeholder='First Name' />
         <input required type='text' placeholder='Last Name' />
         <input required type='email' placeholder='Email' />
-        <input required type='password' placeholder='Password' />
-        <input required type='password' placeholder='Confirm Password' />
         <Link className='button' to="/plan">Register</Link>
         {/* <p>Oops an ERROR occured!</p> */}
         <span>Already have an account? <Link to='/plan'>Sign In</Link></span>

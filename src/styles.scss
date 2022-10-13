@@ -220,10 +220,9 @@ $orange: #cca152;
             gap: 20px;
 
             h1 {
-              font-size: 3.5rem;
-              font-weight: 600;
+              font-size: 2.5rem;
+              font-weight: 900;
               color: $primary-color;
-              margin: 20px 0;
               padding: 0;
               text-align: start;
             }
@@ -236,12 +235,15 @@ $orange: #cca152;
               text-align: start;
             }
             p {
-              font-size: 1.5rem;
-              font-weight: 300;
+              font-size: 1.4rem;
+              font-weight: 400;
               color: $primary-color;
               padding: 0;
               text-align: start;
               margin: 20px 0;
+              .topic{
+                font-weight: 500;
+              }
             }
             .dates {
               font-size: 2rem;
@@ -262,8 +264,8 @@ $orange: #cca152;
               margin: 30px;
 
               &:hover {
-                background-color: $orange;
-                color: $primary-color;
+                background-color: $primary-color;
+                color: $white;
               }
             }
           }
@@ -384,14 +386,12 @@ $orange: #cca152;
           flex-direction: column;
           align-items: center;
           justify-content: center;
-          gap: 20px;
+          gap: 10px;
           margin: 60px 0;
-          border-radius: 10px;
           h4 {
             font-size: 1.8rem;
             font-weight: 500;
             color: $primary-color;
-            text-align: center;
           }
           .card {
             display: flex;
@@ -414,6 +414,7 @@ $orange: #cca152;
               font-weight: 300;
               color: $primary-color;
               text-align: center;
+              
             }
             span {
               font-size: 1.2rem;
