@@ -1,4 +1,4 @@
-$bg-color: #d4f2f4;
+$bg-color: #ffffff;
 $bg-color-variant: #d4f2f4e6;
 $primary-color: #04445f;
 $primary-color-variant: #04445feb;
@@ -10,10 +10,14 @@ $orange: #cca152;
 .app {
   min-height: 100vh;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 
   .conatiner {
-    width: 80vw;
+    width: 100vw;
+    height: 100vh;
     margin: 0 auto;
+    background: url('ttps://github.com/charlesncn/stem/blob/main/src/imgs/bg/bg-robotics.png?raw=true') no-repeat center center fixed;
     //--------------- LOGIN REGISTER ---------------
     .auth {
       display: flex;
@@ -93,6 +97,9 @@ $orange: #cca152;
     //--------------- NAVBAR ---------------
 
     .navbar {
+      margin: 0 auto;
+      width: 80vw;
+      height: 10vh;
       .container {
         display: flex;
         margin: 14px 0;
@@ -102,7 +109,7 @@ $orange: #cca152;
 
         .logo {
           img {
-            width: 82px;
+            height: 64px;
           }
         }
         .links {
@@ -135,75 +142,96 @@ $orange: #cca152;
     //--------------- HOME---------------
 
     .home {
-      display: flex;
-      flex-direction: column;
-
+      max-height: 90vh;
+      .sidebar{
+        width: 10vw;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+      }
       .container {
+        width: 80vw;
+        margin: 0 auto;
         display: flex;
-        justify-content: center;
-        align-items: space-between;
-        min-height: 70vh;
-        background-image: url("https://raw.githubusercontent.com/charlesncn/stem/main/src/imgs/stem-kid.webp");
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
+        flex-direction: column;
 
-        .left {
-          flex: 1;
-        }
-        .right {
-          flex: 1;
+        .content {
           display: flex;
-          flex-direction: column;
-          background-color: $primary-color-variant;
-          align-items: center;
           justify-content: center;
-          padding: 20px;
-          gap: 50px;
-
-          h1 {
-            font-size: 4rem;
-            font-weight: 600;
-            color: $white;
-            margin: 20px 0;
-            padding: 0;
-            text-align: center;
+          align-items: space-between;
+          height: 70vh;
+          .left {
+            flex: 1;
+            // background-image: url("https://raw.githubusercontent.com/charlesncn/stem/main/src/imgs/stem-kid.webp");
+            // background-position: center;
+            // background-size: cover;
+            // background-repeat: no-repeat;
           }
-          p {
-            font-size: 1.5rem;
-            font-weight: 300;
-            color: $white;
-            padding: 0;
-            text-align: center;
-            margin: 20px 0;
-          }
-          .dates{
-            font-size: 2rem;
-            color: $orange;
-            font-weight: 500;
-            text-align: center;
-          }
+          .right {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            padding: 20px;
+            gap: 20px;
 
-          .button {
-            padding: 10px 30px;
-            border: 1px solid $outline-color;
-            border-radius: 10px;
-            background-color: none;
-            text-decoration: none;
-            color: $white;
-            font-size: 1.3rem;
-            transition: all ease 0.4s;
-            margin: 30px;
-
-            &:hover {
-              background-color: $white;
+            h1 {
+              font-size: 3.5rem;
+              font-weight: 600;
               color: $primary-color;
+              margin: 20px 0;
+              padding: 0;
+              text-align: start;
+            }
+            h5 {
+              font-size: 1.5rem;
+              font-weight: 400;
+              color: $primary-color;
+              margin: 0;
+              padding: 0;
+              text-align: start;
+            }
+            p {
+              font-size: 1.5rem;
+              font-weight: 300;
+              color: $primary-color;
+              padding: 0;
+              text-align: start;
+              margin: 20px 0;
+            }
+            .dates {
+              font-size: 2rem;
+              color: $primary-color;
+              font-weight: 500;
+              text-align: start;
+            }
+
+            .button {
+              padding: 10px 30px;
+              border: 1px solid $outline-color;
+              border-radius: 10px;
+              background-color: none;
+              text-decoration: none;
+              color: $primary-color;
+              font-size: 1.3rem;
+              transition: all ease 0.4s;
+              margin: 30px;
+
+              &:hover {
+                background-color: $orange;
+                color: $primary-color;
+              }
             }
           }
         }
       }
-      .activities{
-        margin: 120px 0;
+
+      .activities {
+        margin: auto 0;
+
         h3 {
           text-align: center;
           font-size: 2rem;
@@ -212,35 +240,38 @@ $orange: #cca152;
         }
 
         .cardContainer {
-          margin: 60px 0 0 0;
+          margin: auto 0;
           display: flex;
-          align-items: flex-start;
+          align-items: center;
           justify-content: center;
-          gap: 20px;
+          flex-wrap: wrap;
+          gap: 50px;
 
-          .card{
+          .card {
+            width: 550px;
+            height: 250px;
             display: flex;
+            flex-wrap: wrap;
             padding: 20px;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            gap: 20px;
+            gap: 100px;
             border-radius: 5px;
             box-shadow: 0 0 5px 0 $outline-color;
 
-            span{
+            span {
               font-size: 1.5rem;
               font-weight: 500;
               color: $primary-color;
             }
 
-            img{
-              width: 120px;
+            img {
+              height: 100px;
+              object-fit: contain;
             }
-
           }
         }
-
       }
       .sponsors {
         margin: 60px 0 0 0;
@@ -286,8 +317,10 @@ $orange: #cca152;
     //--------------- PLAN ---------------
 
     .plan {
+      width: 80vw;
+      margin: 0 auto;
       border-top: 1px solid $primary-color;
-      background-image: url("https://github.com/charlesncn/stem/blob/main/src/imgs/payment%20bg.png?raw=true");
+      background-image: url("https://github.com/charlesncn/stem/blob/main/src/imgs/stem-illustration.webp");
       background-size: cover;
       background-attachment: fixed;
       background-repeat: no-repeat;
@@ -415,6 +448,8 @@ $orange: #cca152;
 
     // --------------- FOOTER ---------------
     .footer {
+      width: 80vw;
+      margin: 0 auto;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -568,50 +603,46 @@ $orange: #cca152;
         }
       }
 
-
-
-
-    .navbar {
-      .container {
-        display: flex;
-        margin: 5px 0;
-        padding: 10px 0;
-        justify-content: space-between;
-        position: sticky;
-
-        .logo {
-          img {
-            width: 64px;
-          }
-        }
-        .links {
+      .navbar {
+        .container {
           display: flex;
-          align-items: center;
-          justify-content: center;
-          gap: 5px;
-          a,
-          span {
-            cursor: pointer;
-            text-decoration: none;
-            color: $primary-color;
-            font-size: 1.2rem;
-            font-weight: 300;
-            margin: 0 10px;
-            padding: 5px 15px;
-            border-radius: 5px;
-            transition: all 0.3s ease-in-out;
-            &:hover {
-              color: $white;
-              background-color: $primary-color-variant;
+          margin: 5px 0;
+          padding: 10px 0;
+          justify-content: space-between;
+          position: sticky;
+
+          .logo {
+            img {
+              width: 64px;
+            }
+          }
+          .links {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            a,
+            span {
+              cursor: pointer;
+              text-decoration: none;
+              color: $primary-color;
+              font-size: 1.2rem;
+              font-weight: 300;
+              margin: 0 10px;
+              padding: 5px 15px;
+              border-radius: 5px;
+              transition: all 0.3s ease-in-out;
+              &:hover {
+                color: $white;
+                background-color: $primary-color-variant;
+              }
             }
           }
         }
       }
-    }
 
       .home {
-
-        .activities{
+        .activities {
           margin: 80px 0;
           h3 {
             text-align: center;
@@ -619,7 +650,7 @@ $orange: #cca152;
             font-weight: 600;
             color: $primary-color;
           }
-  
+
           .cardContainer {
             margin: 60px 0 0 0;
             display: flex;
@@ -627,8 +658,8 @@ $orange: #cca152;
             align-items: center;
             justify-content: center;
             gap: 20px;
-  
-            .card{
+
+            .card {
               width: 80vw;
               display: flex;
               padding: 20px;
@@ -638,21 +669,18 @@ $orange: #cca152;
               gap: 20px;
               border-radius: 5px;
               box-shadow: 0 0 5px 0 $outline-color;
-  
-              span{
+              span {
                 font-size: 1.5rem;
                 font-weight: 500;
                 color: $primary-color;
               }
-  
-              img{
+
+              img {
                 width: 120px;
               }
-  
             }
           }
         }
-  
 
         .sponsors {
           width: 100%;
@@ -689,23 +717,25 @@ $orange: #cca152;
         margin: 20px 0;
         border: none;
         gap: 20px;
-      .socialmedia{
-        ul{
-          padding: 0;
-        }
-      }
-        
-      .message {width: 90vw;
-
-        .btns {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
+        .socialmedia {
+          ul {
+            padding: 0;
+          }
         }
 
-        form {
+        .message {
           width: 90vw;
-        }}
+
+          .btns {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          }
+
+          form {
+            width: 90vw;
+          }
+        }
       }
 
       .plan {
@@ -753,7 +783,7 @@ $orange: #cca152;
               border-radius: 5px;
               padding: 15px;
               gap: 10px;
-  
+
               img {
                 width: 80px;
                 object-fit: contain;
@@ -779,7 +809,7 @@ $orange: #cca152;
                 color: $primary-color;
                 font-size: 1.3rem;
                 transition: all ease 0.4s;
-  
+
                 &:hover {
                   background-color: $primary-color;
                   color: $white;

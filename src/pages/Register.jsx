@@ -13,9 +13,9 @@ function Register() {
         <input required type='email' placeholder='Email' />
         <input required type='password' placeholder='Password' />
         <input required type='password' placeholder='Confirm Password' />
-        <Link className='button' to="/login">Register</Link>
+        <Link className='button' to="/plan">Register</Link>
         {/* <p>Oops an ERROR occured!</p> */}
-        <span>Already have an account? <Link to='/login'>Sign In</Link></span>
+        <span>Already have an account? <Link to='/plan'>Sign In</Link></span>
       </form>
       </div>
       </div>
