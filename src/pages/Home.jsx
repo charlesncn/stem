@@ -40,6 +40,7 @@ function Home() {
           <div className="left"></div>
         </div>
       </div>
+      
 
       {/* <div className="activities">
         <h3>Activities</h3>
