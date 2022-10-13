@@ -17,7 +17,8 @@ $orange: #cca152;
     width: 100vw;
     height: 100vh;
     margin: 0 auto;
-    background: url('https://github.com/charlesncn/stem/blob/main/src/imgs/bg/bg-robotics-2.png?raw=true') no-repeat center center fixed;
+    background: url('https://github.com/charlesncn/stem/blob/main/src/imgs/bg/bg-robotics-2-2.png?raw=true') no-repeat;
+    background-size: cover;
     //--------------- LOGIN REGISTER ---------------
     .auth {
       display: flex;
@@ -144,12 +145,52 @@ $orange: #cca152;
     .home {
       max-height: 90vh;
       .sidebar{
-        width: 10vw;
-        height: 100vh;
+        width: 5vw;
+        height: max-content;
         position: absolute;
         top: 0;
-        left: 0;
+        bottom: 0;
+        right: 20px;
+        margin: auto 20px;
         z-index: 1;
+        border-radius: 10px;
+        ul{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          li{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 64px;
+            height: 64px;
+            list-style: none;
+            padding: 10px;
+            margin: 20px 0;
+            background-color: $white;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            border-radius: 50%;
+            box-shadow: 0 0 10px 0 $outline-color;
+              &:hover {
+                color: $white;
+                background-color: $primary-color-variant;
+              }
+              &:hover a{
+                color: $white;
+              }
+            a{
+              text-decoration: none;
+              color: $primary-color;
+              font-size: 1.4rem;
+              font-weight: 500;
+              padding: 5px 15px;
+              border-radius: 5px;
+              transition: all 0.3s ease-in-out;
+            }
+          }
+        }
       }
       .container {
         width: 80vw;
@@ -274,7 +315,7 @@ $orange: #cca152;
         }
       }
       .sponsors {
-        margin: 60px 0 0 0;
+        margin: 40px 0 0 0;
         h3 {
           text-align: center;
           font-size: 2rem;
@@ -282,7 +323,7 @@ $orange: #cca152;
           color: $primary-color;
         }
         .cardContainer {
-          margin: 120px 0 0 0;
+          margin: 30px 0 0 0;
           display: flex;
           align-items: flex-start;
           justify-content: center;
@@ -304,8 +345,9 @@ $orange: #cca152;
             }
 
             img {
-              width: 64px;
+              width: 48px;
               object-fit: cover;
+              border-radius: 50%;
             }
           }
         }
