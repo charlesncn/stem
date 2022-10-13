@@ -202,7 +202,6 @@ $orange: #cca152;
           display: flex;
           justify-content: center;
           align-items: space-between;
-          height: 70vh;
           .left {
             flex: 1;
             // background-image: url("https://raw.githubusercontent.com/charlesncn/stem/main/src/imgs/stem-kid.webp");
@@ -218,6 +217,9 @@ $orange: #cca152;
             justify-content: center;
             padding: 20px;
             gap: 20px;
+            .socialmedia{
+              display: none;
+            }
 
             h1 {
               font-size: 2.5rem;
@@ -317,7 +319,9 @@ $orange: #cca152;
         }
       }
       .sponsors {
-        margin: 20px 0 0 0;
+        position: absolute;
+        bottom: 20px;
+        align-self: center;
         h3 {
           text-align: center;
           font-size: 1.5rem;
@@ -363,11 +367,7 @@ $orange: #cca152;
     .plan {
       width: 80vw;
       margin: 0 auto;
-      border-top: 1px solid $primary-color;
-      background-image: url("https://github.com/charlesncn/stem/blob/main/src/imgs/stem-illustration.webp");
-      background-size: cover;
-      background-attachment: fixed;
-      background-repeat: no-repeat;
+      
       h3 {
         font-size: 2.5rem;
         font-weight: 600;
@@ -398,7 +398,7 @@ $orange: #cca152;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            background-color: $bg-color-variant;
+            background-color: $white;
             width: 350px;
             box-shadow: 0 0 10px 0 $outline-color;
             border-radius: 5px;
@@ -630,10 +630,16 @@ $orange: #cca152;
 @media (max-width: 768px) {
   .app {
     max-width: 100vw;
+    margin: 0 auto;
+    padding: 0;
 
     .conatiner {
-      width: 95vw;
+      width: 100vw;
+      height: max-content;
       margin: 0 auto;
+      padding: 0;
+      background: url('https://github.com/charlesncn/stem/blob/main/src/imgs/bg/bg-robotics.png?raw=true') no-repeat;
+      background-size: cover;
       .auth {
         min-height: 100vh;
         .form-container {
@@ -656,23 +662,24 @@ $orange: #cca152;
 
           .logo {
             img {
-              width: 64px;
+              height: 64px;
+              object-fit: contain;
             }
           }
           .links {
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 5px;
+            gap: 2px;
             a,
             span {
               cursor: pointer;
               text-decoration: none;
               color: $primary-color;
-              font-size: 1.2rem;
+              font-size: 1rem;
               font-weight: 300;
-              margin: 0 10px;
-              padding: 5px 15px;
+              margin: 0 5px;
+              padding: 5px 10px;
               border-radius: 5px;
               transition: all 0.3s ease-in-out;
               &:hover {
@@ -685,6 +692,125 @@ $orange: #cca152;
       }
 
       .home {
+        margin: 0 auto;
+        padding: 0;
+        align-self: center;
+
+        width: 80vw;
+      .sidebar{
+        display: none;
+      }
+
+
+      .container {
+        width: 80vw;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+
+        .content {
+          display: flex;
+          justify-content: center;
+          align-items: space-between;
+          .left {
+            flex: 0;
+          }
+          .right {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            padding: 20px;
+            gap: 20px;
+
+            .socialmedia{
+              display: block;
+              align-self: center;
+              ul {
+                list-style-type: none;
+                  display: flex;
+                  flex-direction: row;
+                  align-items: center;
+                  justify-content: center;
+                  margin: auto;
+                  align-self: center;
+                  padding: 0;
+      
+                li {
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  font-size: 16px;
+                  font-weight: 500;
+                  margin: 0 10px;
+                  width: 32px;
+                  height: 32px;
+                  padding: 5px;
+                  border-radius: 50%;
+                  border: 1px solid $primary-color;
+                  transition: all 0.3s ease-in-out;
+      
+                  a {
+                    cursor: pointer;
+                    text-decoration: none;
+                    color: $primary-color;
+                    &:hover {
+                      color: $outline-color;
+                    }
+                  }
+                }
+              }
+
+            }
+
+            h1 {
+              font-size: 1.5rem;
+              font-weight: 900;
+              color: $primary-color;
+              padding: 0;
+              align-self: center;
+              text-align: center;
+            }
+            p {
+              font-size: 1.2rem;
+              font-weight: 400;
+              color: $primary-color;
+              padding: 0;
+              text-align: center;
+              margin: 20px 0;
+              .topic{
+                font-weight: 500;
+              }
+            }
+            .dates {
+              font-size: 1.2rem;
+              color: $primary-color;
+              font-weight: 500;
+              align-self: center;
+              text-align: center;
+            }
+
+            .button {
+              padding: 10px 30px;
+              border: 1px solid $outline-color;
+              border-radius: 10px;
+              background-color: none;
+              text-decoration: none;
+              color: $primary-color;
+              font-size: 1.3rem;
+              transition: all ease 0.4s;
+              margin: 30px;
+              align-self: center;
+
+              &:hover {
+                background-color: $primary-color;
+                color: $white;
+              }
+            }
+          }
+        }
+      }
         .activities {
           margin: 80px 0;
           h3 {
@@ -726,12 +852,14 @@ $orange: #cca152;
         }
 
         .sponsors {
-          width: 100%;
+          position: relative;
+          width: 80vw;
           margin: 80px 0;
+          align-self: center;
           .cardContainer {
             margin: 80px 0 0 0;
             display: flex;
-            width: 100%;
+            width: 80vw;
             flex-direction: column;
             align-items: flex-start;
             justify-content: center;
@@ -739,7 +867,7 @@ $orange: #cca152;
             gap: 20px;
             .card {
               height: max-content;
-              width: 100%;
+              width: 80vw;
               display: flex;
               align-items: center;
               justify-content: space-between;
@@ -782,24 +910,24 @@ $orange: #cca152;
       }
 
       .plan {
-        border-top: 1px solid $primary-color;
-        background-image: url("https://github.com/charlesncn/stem/blob/main/src/imgs/payment%20bg.png?raw=true");
-        background-size: cover;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
+        
         h3 {
-          font-size: 2.5rem;
+          font-size: 1.5rem;
           font-weight: 600;
           color: $primary-color;
           text-align: center;
+          align-self: center;
         }
         .container {
+          min-height: 100vh;
+          margin: 0 auto;
           display: flex;
           flex-direction: column;
           align-items: center;
           justify-content: center;
-          gap: 100px;
-          margin: 20px 0;
+            align-self: center;
+          gap: 50px;
+          margin: 10px auto;
           .left,
           .right {
             display: flex;
@@ -807,10 +935,10 @@ $orange: #cca152;
             align-items: center;
             justify-content: center;
             gap: 20px;
-            margin: 60px 0;
+            margin: 10px 0;
             border-radius: 10px;
             h4 {
-              font-size: 2rem;
+              font-size: 1.2rem;
               font-weight: 600;
               color: $primary-color;
               text-align: center;
@@ -820,8 +948,6 @@ $orange: #cca152;
               flex-direction: column;
               align-items: center;
               justify-content: center;
-              background-color: $bg-color-variant;
-              width: 350px;
               box-shadow: 0 0 10px 0 $outline-color;
               border-radius: 5px;
               padding: 15px;

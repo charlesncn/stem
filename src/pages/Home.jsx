@@ -19,6 +19,15 @@ function Home() {
         <div className="content">
 
           <div className="right">
+          <div className="socialmedia">
+        <ul>
+          <li><a href='https://instagram.com/westgatemallke'><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          <li><a href='https://wa.me/254780557775'><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+          <li><a href='https://www.facebook.com/westgateshoppingmall'><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          <li><a href='linkedin.com'><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+          <li><a href='https://www.westgate.co.ke/'><i class="fa fa-globe" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
             <h1>STEAM AT WESTGATE</h1>
             {/* <h5> (SCIENCE, TECHNOLOGY, ENGINEERING, ART, MATHS)</h5> */}
             <p>
@@ -49,7 +58,7 @@ function Home() {
               className="brandName"
               alt=""
             />
-
+            
             <span>Blueband</span>
           </div>
 
