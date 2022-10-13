@@ -51,7 +51,7 @@ function Activities() {
           <div className="card">
             <span>Origami</span>
             <img
-              src="https://github.com/charlesncn/stem/blob/main/src/imgs/origami.[png]?raw=true"
+              src="https://github.com/charlesncn/stem/blob/main/src/imgs/origami.png?raw=true"
               className="gameName"
               alt=""
             />

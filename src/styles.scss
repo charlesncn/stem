@@ -328,6 +328,8 @@ $orange: #cca152;
     //--------------- ACTIVITIES---------------
 
     .main-activity{
+      width: 90vw;
+      margin: 0 auto;
       
       .activities {
         margin: auto 0;
@@ -336,6 +338,7 @@ $orange: #cca152;
           text-align: center;
           font-size: 2rem;
           font-weight: 600;
+          margin: 20px 0;
           color: $primary-color;
         }
 
@@ -348,16 +351,16 @@ $orange: #cca152;
           gap: 50px;
 
           .card {
-            width: 550px;
+            width: 450px;
             height: 250px;
             display: flex;
-            flex-wrap: wrap;
             padding: 20px;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             gap: 100px;
             border-radius: 5px;
+          background: $white;
             box-shadow: 0 0 5px 0 $outline-color;
 
             span {
