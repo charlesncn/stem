@@ -17,7 +17,8 @@ $orange: #cca152;
     width: 100vw;
     height: 100vh;
     margin: 0 auto;
-    background: url('https://github.com/charlesncn/stem/blob/main/src/imgs/bg/bg-robotics-2-2.png?raw=true') no-repeat;
+    background: url("https://github.com/charlesncn/stem/blob/main/src/imgs/bg/bg-robotics-2-2.png?raw=true")
+      no-repeat;
     background-size: cover;
     //--------------- LOGIN REGISTER ---------------
     .auth {
@@ -144,7 +145,7 @@ $orange: #cca152;
 
     .home {
       max-height: 90vh;
-      .sidebar{
+      .sidebar {
         width: 5vw;
         height: max-content;
         position: absolute;
@@ -154,12 +155,12 @@ $orange: #cca152;
         margin: auto 20px;
         z-index: 1;
         border-radius: 10px;
-        ul{
+        ul {
           display: flex;
           flex-direction: column;
           align-items: center;
           justify-content: center;
-          li{
+          li {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -173,14 +174,14 @@ $orange: #cca152;
             transition: all 0.3s ease-in-out;
             border-radius: 50%;
             box-shadow: 0 0 10px 0 $outline-color;
-              &:hover {
-                color: $white;
-                background-color: $primary-color-variant;
-              }
-              &:hover a{
-                color: $white;
-              }
-            a{
+            &:hover {
+              color: $white;
+              background-color: $primary-color-variant;
+            }
+            &:hover a {
+              color: $white;
+            }
+            a {
               text-decoration: none;
               color: $primary-color;
               font-size: 1.4rem;
@@ -217,7 +218,7 @@ $orange: #cca152;
             justify-content: center;
             padding: 20px;
             gap: 20px;
-            .socialmedia{
+            .socialmedia {
               display: none;
             }
 
@@ -243,7 +244,7 @@ $orange: #cca152;
               padding: 0;
               text-align: start;
               margin: 20px 0;
-              .topic{
+              .topic {
                 font-weight: 500;
               }
             }
@@ -254,7 +255,10 @@ $orange: #cca152;
               text-align: start;
             }
 
-            .button {
+            .links{
+              display: flex;
+              gap: 10px;
+              .button {
               padding: 10px 30px;
               border: 1px solid $outline-color;
               border-radius: 10px;
@@ -270,54 +274,12 @@ $orange: #cca152;
                 color: $white;
               }
             }
+            }
+            
           }
         }
       }
 
-      .activities {
-        margin: auto 0;
-
-        h3 {
-          text-align: center;
-          font-size: 2rem;
-          font-weight: 600;
-          color: $primary-color;
-        }
-
-        .cardContainer {
-          margin: auto 0;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-wrap: wrap;
-          gap: 50px;
-
-          .card {
-            width: 550px;
-            height: 250px;
-            display: flex;
-            flex-wrap: wrap;
-            padding: 20px;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 100px;
-            border-radius: 5px;
-            box-shadow: 0 0 5px 0 $outline-color;
-
-            span {
-              font-size: 1.5rem;
-              font-weight: 500;
-              color: $primary-color;
-            }
-
-            img {
-              height: 100px;
-              object-fit: contain;
-            }
-          }
-        }
-      }
       .sponsors {
         position: absolute;
         bottom: 20px;
@@ -362,12 +324,62 @@ $orange: #cca152;
 
     //--------------- HOME END ---------------
 
+
+    //--------------- ACTIVITIES---------------
+
+    .main-activity{
+      
+      .activities {
+        margin: auto 0;
+
+        h3 {
+          text-align: center;
+          font-size: 2rem;
+          font-weight: 600;
+          color: $primary-color;
+        }
+
+        .cardContainer {
+          margin: auto 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-wrap: wrap;
+          gap: 50px;
+
+          .card {
+            width: 550px;
+            height: 250px;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 100px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px 0 $outline-color;
+
+            span {
+              font-size: 1.5rem;
+              font-weight: 500;
+              color: $primary-color;
+            }
+
+            img {
+              height: 100px;
+              object-fit: contain;
+            }
+          }
+        }
+      }
+    }
     //--------------- PLAN ---------------
 
     .plan {
       width: 80vw;
       margin: 0 auto;
-      
+
       h3 {
         font-size: 2.5rem;
         font-weight: 600;
@@ -414,7 +426,6 @@ $orange: #cca152;
               font-weight: 300;
               color: $primary-color;
               text-align: center;
-              
             }
             span {
               font-size: 1.2rem;
@@ -463,6 +474,7 @@ $orange: #cca152;
           display: flex;
           align-items: center;
           justify-content: space-between;
+
           .button {
             width: 100px;
             padding: 10px 30px;
@@ -638,8 +650,8 @@ $orange: #cca152;
       height: max-content;
       margin: 0 auto;
       padding: 0;
-      background: url('https://github.com/charlesncn/stem/blob/main/src/imgs/bg/bg-robotics.png?raw=true') no-repeat;
-      background-size: cover;
+      background: url("https://github.com/charlesncn/stem/blob/main/src/imgs/bg/bg-robotics.png?raw=true")
+        no-repeat center center/cover;
       .auth {
         min-height: 100vh;
         .form-container {
@@ -697,38 +709,38 @@ $orange: #cca152;
         align-self: center;
 
         width: 80vw;
-      .sidebar{
-        display: none;
-      }
+        .sidebar {
+          display: none;
+        }
 
-
-      .container {
-        width: 80vw;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-
-        .content {
+        .container {
+          width: 80vw;
+          margin: 0 auto;
           display: flex;
-          justify-content: center;
-          align-items: space-between;
-          .left {
-            flex: 0;
-          }
-          .right {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: center;
-            padding: 20px;
-            gap: 20px;
+          flex-direction: column;
 
-            .socialmedia{
-              display: block;
-              align-self: center;
-              ul {
-                list-style-type: none;
+          .content {
+            display: flex;
+            justify-content: center;
+            align-items: space-between;
+            background-color: #ffffffe6;
+            .left {
+              flex: 0;
+            }
+            .right {
+              flex: 1;
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              justify-content: center;
+              padding: 20px;
+              gap: 20px;
+
+              .socialmedia {
+                display: block;
+                align-self: center;
+                ul {
+                  list-style-type: none;
                   display: flex;
                   flex-direction: row;
                   align-items: center;
@@ -736,116 +748,76 @@ $orange: #cca152;
                   margin: auto;
                   align-self: center;
                   padding: 0;
-      
-                li {
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  font-size: 16px;
-                  font-weight: 500;
-                  margin: 0 10px;
-                  width: 32px;
-                  height: 32px;
-                  padding: 5px;
-                  border-radius: 50%;
-                  border: 1px solid $primary-color;
-                  transition: all 0.3s ease-in-out;
-      
-                  a {
-                    cursor: pointer;
-                    text-decoration: none;
-                    color: $primary-color;
-                    &:hover {
-                      color: $outline-color;
+
+                  li {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 16px;
+                    font-weight: 500;
+                    margin: 0 10px;
+                    width: 32px;
+                    height: 32px;
+                    padding: 5px;
+                    border-radius: 50%;
+                    border: 1px solid $primary-color;
+                    transition: all 0.3s ease-in-out;
+
+                    a {
+                      cursor: pointer;
+                      text-decoration: none;
+                      color: $primary-color;
+                      &:hover {
+                        color: $outline-color;
+                      }
                     }
                   }
                 }
               }
 
-            }
-
-            h1 {
-              font-size: 1.5rem;
-              font-weight: 900;
-              color: $primary-color;
-              padding: 0;
-              align-self: center;
-              text-align: center;
-            }
-            p {
-              font-size: 1.2rem;
-              font-weight: 400;
-              color: $primary-color;
-              padding: 0;
-              text-align: center;
-              margin: 20px 0;
-              .topic{
-                font-weight: 500;
-              }
-            }
-            .dates {
-              font-size: 1.2rem;
-              color: $primary-color;
-              font-weight: 500;
-              align-self: center;
-              text-align: center;
-            }
-
-            .button {
-              padding: 10px 30px;
-              border: 1px solid $outline-color;
-              border-radius: 10px;
-              background-color: none;
-              text-decoration: none;
-              color: $primary-color;
-              font-size: 1.3rem;
-              transition: all ease 0.4s;
-              margin: 30px;
-              align-self: center;
-
-              &:hover {
-                background-color: $primary-color;
-                color: $white;
-              }
-            }
-          }
-        }
-      }
-        .activities {
-          margin: 80px 0;
-          h3 {
-            text-align: center;
-            font-size: 2rem;
-            font-weight: 600;
-            color: $primary-color;
-          }
-
-          .cardContainer {
-            margin: 60px 0 0 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 20px;
-
-            .card {
-              width: 80vw;
-              display: flex;
-              padding: 20px;
-              flex-direction: column;
-              align-items: center;
-              justify-content: center;
-              gap: 20px;
-              border-radius: 5px;
-              box-shadow: 0 0 5px 0 $outline-color;
-              span {
+              h1 {
                 font-size: 1.5rem;
-                font-weight: 500;
+                font-weight: 900;
                 color: $primary-color;
+                padding: 0;
+                align-self: center;
+                text-align: center;
+              }
+              p {
+                font-size: 1.2rem;
+                font-weight: 400;
+                color: $primary-color;
+                padding: 0;
+                text-align: center;
+                margin: 20px 0;
+                .topic {
+                  font-weight: 500;
+                }
+              }
+              .dates {
+                font-size: 1.2rem;
+                color: $primary-color;
+                font-weight: 500;
+                align-self: center;
+                text-align: center;
               }
 
-              img {
-                width: 120px;
+              .button {
+                padding: 10px 30px;
+                border: 1px solid $outline-color;
+                border-radius: 10px;
+                background-color: none;
+                text-decoration: none;
+                color: $primary-color;
+                font-size: 1.3rem;
+                transition: all ease 0.4s;
+                margin: 30px;
+                align-self: center;
+
+                &:hover {
+                  background-color: $primary-color;
+                  color: $white;
+                }
               }
             }
           }
@@ -910,7 +882,6 @@ $orange: #cca152;
       }
 
       .plan {
-        
         h3 {
           font-size: 1.5rem;
           font-weight: 600;
@@ -925,7 +896,7 @@ $orange: #cca152;
           flex-direction: column;
           align-items: center;
           justify-content: center;
-            align-self: center;
+          align-self: center;
           gap: 50px;
           margin: 10px auto;
           .left,
@@ -983,6 +954,49 @@ $orange: #cca152;
                   background-color: $primary-color;
                   color: $white;
                 }
+              }
+            }
+          }
+        }
+      }
+
+      .main-activity{
+
+        .activities {
+          margin: 80px 0;
+          h3 {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 600;
+            color: $primary-color;
+          }
+
+          .cardContainer {
+            margin: 60px 0 0 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+
+            .card {
+              width: 80vw;
+              display: flex;
+              padding: 20px;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              gap: 20px;
+              border-radius: 5px;
+              box-shadow: 0 0 5px 0 $outline-color;
+              span {
+                font-size: 1.5rem;
+                font-weight: 500;
+                color: $primary-color;
+              }
+
+              img {
+                width: 120px;
               }
             }
           }

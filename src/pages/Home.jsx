@@ -42,9 +42,15 @@ function Home() {
               <br />   (onwards)
             </span>
             <br />
+            <div className="links">
+
+            <Link to="/activities" className="button">
+              View Activities
+            </Link>
             <Link to="/register" className="button">
               Book Now
             </Link>
+            </div>
           </div>
           <div className="left"></div>
         </div>
@@ -58,7 +64,7 @@ function Home() {
               className="brandName"
               alt=""
             />
-            
+
             <span>Blueband</span>
           </div>
 
@@ -136,145 +142,7 @@ function Home() {
       </div>
 
 
-      {/* <div className="activities">
-        <h3>Activities</h3>
-        <div className="cardContainer">
-          <div className="card">
-            <span>Steam Activities</span>
-            <img
-              src="https://github.com/charlesncn/stem/blob/main/src/imgs/sauna.png?raw=true"
-              className="gameName"
-              alt=""
-            />
-          </div>
-          <div className="card">
-            <span>Food</span>
-            <img
-              src="https://github.com/charlesncn/stem/blob/main/src/imgs/food.png?raw=true"
-              className="gameName"
-              alt=""
-            />
-            <br />
-          </div>
-          <div className="card">
-            <span>Zumba</span>
-            <img
-              src="https://github.com/charlesncn/stem/blob/main/src/imgs/zumba.jpeg?raw=true"
-              className="gameName"
-              alt=""
-            />
-          </div>
-          <div className="card">
-            <span>Kids Club</span>
-            <img
-              src="https://github.com/charlesncn/stem/blob/main/src/imgs/kids-club.png?raw=true"
-              className="gameName"
-              alt=""
-            />
-            <br />
-          </div>
-          <div className="card">
-            <span>Movie</span>
-            <img
-              src="https://github.com/charlesncn/stem/blob/main/src/imgs/movie-icon.png?raw=true"
-              className="gameName"
-              alt=""
-            />
-          </div>
-          <div className="card">
-            <span>Origami</span>
-            <img
-              src="https://github.com/charlesncn/stem/blob/main/src/imgs/origami.jpeg?raw=true"
-              className="gameName"
-              alt=""
-            />
-          </div>
-        </div>
-      </div>
-      <div className="sponsors">
-        <h3>Potential Sponsors</h3>
-        <div className="cardContainer">
-          <div className="card">
-            <img
-              src="https://github.com/charlesncn/stem/blob/main/src/imgs/blueband.jpeg?raw=true"
-              className="brandName"
-              alt=""
-            />
-
-            <span>Blueband</span>
-          </div>
-
-          <div className="card">
-            <img
-              src="https://github.com/charlesncn/stem/blob/main/src/imgs/bio-logo.png?raw=true"
-              className="brandName"
-              alt=""
-            />
-
-            <span>Bio Foods</span>
-          </div>
-
-          <div className="card">
-            <img
-              src="https://github.com/charlesncn/stem/blob/main/src/imgs/ribena.png?raw=true"
-              className="brandName"
-              alt=""
-            />
-
-            <span>Ribena</span>
-          </div>
-
-          <div className="card">
-            <img
-              src="https://github.com/charlesncn/stem/blob/main/src/imgs/Pizza_Hut.png?raw=true"
-              className="brandName"
-              alt=""
-            />
-
-            <span>Pizza Hut</span>
-          </div>
-
-          <div className="card">
-            <img
-              src="https://github.com/charlesncn/stem/blob/main/src/imgs/kfc.png?raw=true"
-              className="brandName"
-              alt=""
-            />
-
-            <span>KFC</span>
-          </div>
-
-          <div className="card">
-            <img
-              src="https://github.com/charlesncn/stem/blob/main/src/imgs/nation-media.jpeg?raw=true"
-              className="brandName"
-              alt=""
-            />
-
-            <span>Nation Media Group</span>
-          </div>
-
-          <div className="card">
-            <img
-              src="https://github.com/charlesncn/stem/blob/main/src/imgs/dtb.png?raw=true"
-              className="brandName"
-              alt=""
-            />
-
-            <span>DTB</span>
-          </div>
-
-          <div className="card">
-            <img
-              src="https://github.com/charlesncn/stem/blob/main/src/imgs/kartasi.png?raw=true"
-              className="brandName"
-              alt=""
-            />
-
-            <span>Kartasi</span>
-          </div>
-        </div>
-      </div> */}
+      {/*  */}
     </div>
   );
 }

@@ -13,6 +13,7 @@ import Register from "./pages/Register.jsx";
 import Login from "./pages/Login.jsx";
 import './styles.scss'
 import Booked from "./pages/Booked";
+import Activities from "./pages/Activities";
 
 const Layout = () => {
   return (
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
       {
         path: "/plan",
         element: <Plan />,
+      },
+      {
+        path: "/activities",
+        element: <Activities />,
       },
     ],
 
