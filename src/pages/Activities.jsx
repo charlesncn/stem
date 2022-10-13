@@ -21,7 +21,6 @@ function Activities() {
               className="gameName"
               alt=""
             />
-            <br />
           </div>
           <div className="card">
             <span>Zumba</span>
@@ -38,7 +37,6 @@ function Activities() {
               className="gameName"
               alt=""
             />
-            <br />
           </div>
           <div className="card">
             <span>Movie</span>
