@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/stem/static/css/main.78bd5d98.css",
+    "main.js": "/stem/static/js/main.d1edac6f.js",
+    "static/media/westgate-logo.png": "/stem/static/media/westgate-logo.960f79cf80e79177890b.png",
+    "index.html": "/stem/index.html",
+    "main.78bd5d98.css.map": "/stem/static/css/main.78bd5d98.css.map",
+    "main.d1edac6f.js.map": "/stem/static/js/main.d1edac6f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.78bd5d98.css",
+    "static/js/main.d1edac6f.js"
+  ]
+}
