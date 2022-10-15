@@ -32,7 +32,7 @@ function Home() {
             {/* <h5> (SCIENCE, TECHNOLOGY, ENGINEERING, ART, MATHS)</h5> */}
             <p>
               Educate your kids this holiday season with Westgate Kids & Club
-              steam for kids. <br /> <span className="topic">Topics Included</span><br/> STEAM (Science,
+              steam for kids. <br /><br /> <span className="topic">Topics Included</span><br/> STEAM (Science,
               Technology, Engineering, Art, Math),<br/> food, movie & so much more.
              <br/>
               You also get to enjoy the goodies from our sponsors.

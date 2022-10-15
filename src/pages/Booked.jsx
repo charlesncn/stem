@@ -10,7 +10,7 @@ function Booked() {
         <p>See you soon</p>
         <div className="links">
         <Link className='button' to='/'>Confirm</Link>
-        <Link  to='/plan' className='button'>Cancel</Link>
+        <Link  to='/pricing' className='button'>Cancel</Link>
 
         </div>
         </div>
