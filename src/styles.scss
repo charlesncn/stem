@@ -144,6 +144,13 @@ $orange: #cca152;
 
     .home {
       max-height: 90vh;
+      .carousel{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        z-index: -1;
+      }
       .sidebar {
         width: 5vw;
         height: max-content;

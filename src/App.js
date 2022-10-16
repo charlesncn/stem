@@ -14,6 +14,7 @@ import Login from "./pages/Login.jsx";
 import './styles.scss'
 import Booked from "./pages/Booked";
 import Activities from "./pages/Activities";
+import VideoCarousel from "./components/VideoCarousel";
 
 const Layout = () => {
   return (
@@ -54,6 +55,10 @@ const router = createBrowserRouter([
   {
     path: "/confirm",
     element: <Booked />,
+  },
+  {
+    path: "/test",
+    element: <VideoCarousel />,
   }
 ]);
 

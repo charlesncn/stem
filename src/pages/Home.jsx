@@ -1,9 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import VideoCarousel from "../components/VideoCarousel";
 
 function Home() {
   return (
     <div className="home">
+      <div className="carousel"><VideoCarousel/></div>
       <div className="sidebar">
       <div className="socialmedia">
         <ul>
