@@ -1,0 +1,19 @@
+//---------------Mixins------------
+// mixin for width and height
+@mixin size($width: null, $height: null) {
+  width: $width;
+  height: $height;
+}
+//mixin for font-weight and font-size
+// can customize to include font type too
+@mixin font($weight: null, $size: null) {
+  font-weight: $weight;
+  font-size: $size;
+}
+//mixin for flex box
+@mixin flex($direction: row, $justify: null, $align: null) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
